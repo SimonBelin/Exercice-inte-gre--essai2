@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACC,AAAA,EAAE,AAAA,CACE,KAAK,CCFM,IAAI,CDGlB",
+    "sources": [
+        "../SCSS/style.scss",
+        "../SCSS/_variable.scss"
+    ],
+    "names": [],
+    "file": "style.min.css"
+}
