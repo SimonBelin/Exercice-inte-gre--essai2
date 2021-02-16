@@ -1,6 +1,6 @@
 @import "_variable.scss";
 .footer {
-    background: rgba(28,46,28,0.7),url(content/images/brent-cox-mid.jpg);
+    background-image: linear-gradient(rgba(28,46,28,0.4), rgba(28,46,28,0.4)),url(content/images/brent-cox-mid.jpg);
     background-origin: block;
 }
 .footer_social_network{
