@@ -1,2 +1,29 @@
 h1{color:blue}
 /*# sourceMappingURL=style.min.css.map */
+
+ /* Bouton "See Schedule" header */
+ 
+.schedule{
+ background-color: #00d8ff;
+    color: white;
+    max-height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 40Px;
+    padding: 4%;
+    width: 50%;
+    max-width: 500 px;
+    min-width: 200px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 10px rgba(40, 50, 59, 0.5); 
+}
+
+/* Version portable: les différents lieu */
+
+.lieu {
+    background-color: #f9f9f9;
+    padding: 4%;
+    margin: 1%;
+    height: auto;
+}
