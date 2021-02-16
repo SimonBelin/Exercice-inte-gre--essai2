@@ -1,14 +1,14 @@
 @import "_variable.scss";
+
+// header version mobile
 .Up{
-    background-image: linear-gradient(#222d3a91, #222d3a9d),url(content/images/brent-cox-mid.jpg);
-    background-image: linear-gradient(#222d3a,#222d3a);
-    background-origin: border-box;
-    
+    background-image: linear-gradient(rgba(108, 153, 194, 0.8), rgba(42, 34, 70, 0.8)),url(../content/images/header.jpg);
+    background-origin: border-box; 
+    background-repeat: no-repeat;
+    padding: 3%;
 }
 .header_title_part1{
-    background: url(/content/images/header.jpg);
     position: relative;
-    opacity:0.5;
     display: flex;
 }
 
@@ -21,7 +21,7 @@
     border-radius: 40Px;
     padding: 4%;
     width: 50%;
-    max-width: 500 px;
+    max-width: 400px;
     min-width: 200px;
     text-transform: uppercase;
     font-family: Montserrat;
@@ -39,7 +39,7 @@
 .logo_kazan {
     max-width: 330px;
     max-height: 200px;
-    margin: 8%;
+    margin: 2%;
     width: 40%;
     opacity: 1;
 }
@@ -47,12 +47,33 @@
     display: grid;
     font-family: Maven Pro;
     font-size: 4em;
-    margin: auto;
+    margin: 1em;
 }
 .principal_title_span{
     font-family: Montserrat;
     font-size: 0.5em;
 }
+// .Smartphone_off{
+//     display: none;
+// }
+
+// header version desktop
+.menu_principal-list{
+    display: flex;
+    flex: end;
+    right: 10%;
+
+}
+.menu_principal-item{
+    margin: 1em;
+    color: $color-nav;
+    font-family: Montserrat;
+}
 .Smartphone_off{
-    display: none;
+    font-family: Maven Pro;
+    color:white;
+    width: 50%;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 1em;
 }

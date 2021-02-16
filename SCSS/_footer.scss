@@ -1,7 +1,11 @@
 @import "_variable.scss";
+
+// Footer version mobile
 .footer {
-    background-image: linear-gradient(rgba(28,46,28,0.4), rgba(28,46,28,0.4)),url(content/images/brent-cox-mid.jpg);
+    background-image: linear-gradient(rgba(54, 76, 96, 0.8), rgba(24, 43, 63, 0.8)),url(../content/images/brent-cox-mid.jpg);
     background-origin: block;
+    color: white;
+    padding: 10%;
 }
 .footer_social_network{
     width: 90%;
@@ -34,3 +38,61 @@
     width: 100%;
     margin: auto;
 }
+
+.point_adresse{
+    width: 5%;
+}
+.footer_name {
+    font-family: Montserrat;
+}
+.footer_adresse{
+    font-family: Museo;
+}
+.footer_text{
+    font-family: Montserrat;
+}
+
+.footer_visit_call{
+    font-family: Montserrat;
+}
+.footer_part3{
+    margin: 10%;
+    display: flex;
+    text-align: center;
+    justify-self: end;
+}
+// .footer_images_desktop{
+//     display: none;
+// }
+
+// Footer version desktop
+
+.footer{
+    margin: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(8,1fr);
+    justify-content: space-between;
+}
+.footer_part1{
+    order:1;
+    grid-column: span 4;
+}
+.footer_images_desktop{
+    order:2;
+    grid-column: span 4;
+}
+.info_inside_button{
+    order: 3;
+    grid-column: span 4;
+}
+.footer_part3{
+    order: 10;
+    grid-column: span 2;
+}
+.footer_social_network{
+    order: 4;
+    grid-column: span 2;
+}
+
+

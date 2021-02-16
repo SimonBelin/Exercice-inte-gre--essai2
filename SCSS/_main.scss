@@ -1,7 +1,7 @@
 /* Version portable: les différents lieu */
 @import "_variable.scss";
 
-/* Version portable: les différents fermé */
+/* Version portable: les différents lieu fermé */
 
 .lieu {
     background-color: #f9f9f9;
@@ -11,6 +11,7 @@
 }
 .images_activities {
     max-width: 100%;
+    
 }
 .activity_title_part1{
     color: $color-titre;
@@ -39,4 +40,33 @@
 .read-more{
     color: white;
     font-family: Montserrat;
+}
+.get_ticket{
+background-color: $color-bleudefaut;
+    color: white;
+    max-height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 4%;
+    width: 50%;
+    max-width: 400px;
+    min-width: 200px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    box-shadow: 0px 0px 10px rgba(40, 50, 59, 0.5); 
+}
+// .no_select{
+//     display: none;
+// }
+
+
+/* Version desktop: */
+
+.activities-list{
+margin: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;;
+  justify-content: space-between;
 }
