@@ -1,0 +1,36 @@
+@import "_variable.scss";
+.footer {
+    background: rgba(28,46,28,0.7),url(content/images/brent-cox-mid.jpg);
+    background-origin: block;
+}
+.footer_social_network{
+    width: 90%;
+    max-width: 500 px;
+    min-width: 200px;
+    background-color: white;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+}
+.button_footer {
+    color: #00d8ff;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: bold;
+    padding: 1rem;
+    padding-bottom: 1em;
+    margin: auto;
+}
+.slack_twitter {
+    width: auto;
+    max-width: 50px;
+}
+.lien_slack_twitter{
+    color: $color-titre;
+    line-height: 1rem;
+
+}
+.info_inside_button{
+    width: 100%;
+    margin: auto;
+}

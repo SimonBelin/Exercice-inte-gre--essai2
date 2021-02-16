@@ -1,0 +1,57 @@
+@import "_variable.scss";
+.Up{
+    background: linear-gradient(#222d3a,#766c87);
+    background-origin: border-box;
+    
+}
+.header_title_part1{
+    background: url(/content/images/header.jpg);
+    position: relative;
+    opacity:0.5;
+    display: flex;
+}
+
+.schedule {
+    background-color: $color-bleudefaut;
+    color: white;
+    max-height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 40Px;
+    padding: 4%;
+    width: 50%;
+    max-width: 500 px;
+    min-width: 200px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(40, 50, 59, 0.5); 
+   }
+
+.logo_world_skills {
+    width: 40%;
+    height: 25%;
+    max-width: 250px;
+    max-height: 170px;
+    margin: 8%;
+}
+.logo_kazan {
+    max-width: 330px;
+    max-height: 200px;
+    margin: 8%;
+    width: 40%;
+    opacity: 1;
+}
+.principal_title {
+    display: grid;
+    font-family: Maven Pro;
+    font-size: 4em;
+    margin: auto;
+}
+.principal_title_span{
+    font-family: Montserrat;
+    font-size: 0.5em;
+}
+.Smartphone_off{
+    display: none;
+}

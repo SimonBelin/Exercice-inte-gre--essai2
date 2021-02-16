@@ -1,5 +1,8 @@
  @import "_variable.scss";
  h1{
-     color:$color-primary;
+     color:$color-bleudefaut;
+     font-family: Montserrat;
  }
-  
+ @import "_header.scss";
+ @import "_main.scss";
+ @import "_footer.scss";

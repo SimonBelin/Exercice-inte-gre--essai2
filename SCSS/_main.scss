@@ -1,0 +1,42 @@
+/* Version portable: les différents lieu */
+@import "_variable.scss";
+
+/* Version portable: les différents fermé */
+
+.lieu {
+    background-color: #f9f9f9;
+    padding: 4%;
+    margin: 1%;
+    height: auto;
+}
+.images_activities {
+    max-width: 100%;
+}
+.activity_title_part1{
+    color: $color-titre;
+    font-family: Montserrat;
+    font-weight: bolder;
+    display: grid;
+}
+.activity_title_part2{
+    color: $color-titre;
+    font-family: Museo;
+    font-weight: lighter; 
+}
+.activity_situation{
+    color: $color-bleudefaut;
+    font-family: Montserrat;
+}
+.activity-details{
+    color: white;
+    font-family: Montserrat;
+}
+.activity_subtitle{
+    color: #d4ce9a;
+    font-family: Montserrat;
+    font-size: small;
+}
+.read-more{
+    color: white;
+    font-family: Montserrat;
+}
