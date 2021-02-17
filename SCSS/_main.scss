@@ -64,21 +64,21 @@ background-color: $color-bleudefaut;
  .no_select{
      display: none;
  }
-//  .photo_desktop{
-//     display: none;
-// }
+ .photo_desktop{
+     display: none;
+ }
 
 /* Version desktop: */
 
-.activities-list{
-margin: 2rem;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;;
-  justify-content: space-between;
-}
-.lieu {
-    padding: 4%;
-    margin: 1%;
-    height: auto;
-}
+// .activities-list{
+// margin: 2rem;
+//   display: grid;
+//   gap: 1rem;
+//   grid-template-columns: 1fr 1fr 1fr 1fr;;
+//   justify-content: space-between;
+// }
+// .lieu {
+//     padding: 4%;
+//     margin: 1%;
+//     height: auto;
+// }
