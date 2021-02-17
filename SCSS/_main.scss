@@ -1,33 +1,19 @@
 /* Version portable: les différents lieu */
 @import "_variable.scss";
 
-/* Version portable: les différents lieu fermé */
-
-.lieu {
-    background-color: #f9f9f9;
-    padding: 4%;
-    margin: 1%;
-    height: auto;
+// valable pour les deux
+.main_h1 {
+    margin-left: 5%;
 }
 .images_activities {
     max-width: 100%;
-    
 }
-.activity_title_part1{
-    color: $color-titre;
-    font-family: Montserrat;
-    font-weight: bolder;
-    display: grid;
+.activity-header{
+    background-size: cover;
+    width: 300px;
+    height: 400px;
 }
-.activity_title_part2{
-    color: $color-titre;
-    font-family: Museo;
-    font-weight: lighter; 
-}
-.activity_situation{
-    color: $color-bleudefaut;
-    font-family: Montserrat;
-}
+
 .activity-details{
     color: white;
     font-family: Montserrat;
@@ -42,7 +28,7 @@
     font-family: Montserrat;
 }
 .get_ticket{
-background-color: $color-bleudefaut;
+    background-color: $color-bleudefaut;
     color: white;
     max-height: 200px;
     display: grid;
@@ -61,24 +47,85 @@ background-color: $color-bleudefaut;
 .ticket_main{
     grid-column: 1/-1
 }
+
+@media screen and (max-width: 800px) {
+/* Version portable: les différents lieu fermé */
+
+.lieu {
+    background-color: #f9f9f9;
+    padding: 4%;
+    margin: 1%;
+    height: auto;
+    list-style-type: none
+}   
+
+.activity_title_part1{
+    color: $color-titre;
+    font-family: Montserrat;
+    font-weight: bolder;
+    display: grid;
+}
+.activity_title_part2{
+    color: $color-titre;
+    font-family: Museo;
+    font-weight: lighter; 
+}
+.activity_situation{
+    color: $color-bleudefaut;
+    font-family: Montserrat;
+}
  .no_select{
      display: none;
  }
  .photo_desktop{
      display: none;
  }
-
+}
+@media screen and (min-width: 800px) {
 /* Version desktop: */
 
-// .activities-list{
-// margin: 2rem;
-//   display: grid;
-//   gap: 1rem;
-//   grid-template-columns: 1fr 1fr 1fr 1fr;;
-//   justify-content: space-between;
-// }
-// .lieu {
-//     padding: 4%;
-//     margin: 1%;
-//     height: auto;
-// }
+ .activities-list{
+    margin: 2rem;
+   display: grid;
+   gap: 1rem;
+   grid-template-columns: 1fr 1fr 1fr 1fr;;
+   justify-content: space-between;
+ }
+ .lieu {
+    padding: 4%;
+    margin: 1%;
+    height: auto;
+    background-color: #f9f9f9;
+    padding: 4%;
+    margin: 1%;
+    height: auto;
+    list-style-type: none
+ }
+
+ .activity_title_part1{
+    color: $color-titre;
+    font-family: Montserrat;
+    font-weight: bolder;
+    display: grid;
+}
+.activity_title_part2{
+    color: $color-titre;
+    font-family: Museo;
+    font-weight: lighter; 
+}
+.activity_situation{
+    color: $color-bleudefaut;
+    font-family: Montserrat;
+}
+.activity-details{
+    display: none;
+}
+.activity_subtitle{
+    display: none;
+}
+.read-more{
+    display: none;
+}
+
+
+}

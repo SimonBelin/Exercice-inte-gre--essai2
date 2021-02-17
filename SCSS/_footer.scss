@@ -1,12 +1,15 @@
 @import "_variable.scss";
-
-// Footer version mobile
-.footer {
-    background-image: linear-gradient(rgba(54, 76, 96, 0.8), rgba(24, 43, 63, 0.8)),url(../content/images/brent-cox-mid.jpg);
-    background-origin: block;
-    color: white;
-    padding: 10%;
-}
+// Footer valable pour les deux
+.button_footer {
+    color: #00d8ff;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: bold;
+    padding: 1rem;
+    padding-bottom: 1em;
+    margin: auto;
+    margin-bottom: -18px;
+}    
 .footer_social_network{
     width: 90%;
     max-width: 500 px;
@@ -16,32 +19,20 @@
     display: block;
     margin: auto;
 }
-.button_footer {
-    color: #00d8ff;
-    font-size: 18px;
-    font-family: Montserrat;
-    font-weight: bold;
-    padding: 1rem;
-    padding-bottom: 1em;
-    margin: auto;
+.point_adresse{
+    width: 4%;
+}
+.footer {
+    background-image: linear-gradient(rgba(54, 76, 96, 0.8), rgba(24, 43, 63, 0.8)),url(../content/images/brent-cox-mid.jpg);
+    background-origin: block;
+    color: white;
+    padding: 10%;
 }
 .slack_twitter {
     width: auto;
     max-width: 50px;
 }
-.lien_slack_twitter{
-    color: $color-titre;
-    line-height: 1rem;
 
-}
-.info_inside_button{
-    width: 100%;
-    margin: auto;
-}
-
-.point_adresse{
-    width: 5%;
-}
 .footer_name {
     font-family: Montserrat;
 }
@@ -55,6 +46,18 @@
 .footer_visit_call{
     font-family: Montserrat;
 }
+
+// Footer version mobile
+@media screen and (max-width: 800px) {
+
+.lien_slack_twitter{
+    color: $color-titre;
+    line-height: 1rem;
+}
+.info_inside_button{
+    width: 100%;
+    margin: auto;
+}
 .footer_part3{
     margin: 10%;
     display: flex;
@@ -64,35 +67,68 @@
 .footer_images_desktop{
      display: none;
  }
+}
+@media screen and (min-width: 800px) {
+ //Footer version desktop
 
-// Footer version desktop
-
-// .footer{
-//     margin: 2rem;
-//     display: grid;
-//     gap: 2rem;
-//     grid-template-columns: repeat(8,1fr);
-//     justify-content: space-between;
+ .secteur_flex1{
+     display: flex;
+     width: 100%;
+ }
+ .footer_part1{
+    width: 40%;
+    align-self: left;
+ }
+ .footer_images_desktop{
+    width: 50%;
+    align-self: right;
+    margin-left: 10%;
+ }
+ 
+.footer_social_network{
+    width: 40%;
+    order: 2;
+    position: absolute;
+    margin-left: 0%;
+    margin-top: 3%;
+}
+ .footer_visit_call{
+     position: absolute;
+     margin-left: 50%;
+     margin-top: 3%;
+ }
+ .footer_part3{
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 3%;
+ }
+//  .footer{
+//      margin: 2rem;
+//      display: flex;
+//      gap: 2rem;
+//      grid-template-columns: repeat(4,1fr);
+//      grid-template-rows: repeat(2,1fr);
+//      justify-content: space-between;
 // }
-// .footer_part1{
-//     order:1;
-//     grid-column: span 4;
-// }
-// .footer_images_desktop{
-//     order:2;
-//     grid-column: span 4;
-// }
-// .info_inside_button{
-//     order: 3;
-//     grid-column: span 4;
-// }
-// .footer_part3{
-//     order: 10;
-//     grid-column: span 2;
-// }
-// .footer_social_network{
-//     order: 4;
-//     grid-column: span 2;
-// }
-
+//  .footer_part1{
+//      order:1;
+//      grid-column: span 2;
+//  }
+//  .footer_images_desktop{
+//      order:2;
+//      grid-column: span 2;
+//  }
+//  .info_inside_button{
+//      order: 3;
+//      grid-column: span 2;
+//  }
+//  .footer_part3{
+//      order: 10;
+//      grid-column: span 1;
+//  }
+//  .footer_visit_call{
+//      order: 4;
+//      grid-column: span 1;
+//  }
+}
 

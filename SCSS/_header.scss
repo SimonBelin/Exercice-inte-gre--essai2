@@ -1,12 +1,15 @@
 @import "_variable.scss";
 
-// header version mobile
 .Up{
     background-image: linear-gradient(rgba(108, 153, 194, 0.8), rgba(42, 34, 70, 0.8)),url(../content/images/header.jpg);
     background-origin: border-box; 
     background-repeat: no-repeat;
     padding: 3%;
 }
+
+@media screen and (max-width: 800px) {
+// header version mobile
+
 .header_title_part1{
     position: relative;
     display: flex;
@@ -49,6 +52,13 @@
     font-size: 4em;
     margin: 1em;
 }
+.menu_principal-list{
+    list-style-type: none;
+    color:$color-nav;
+}
+.menu_principal-item{
+    color:$color-nav;
+}
 .principal_title_span{
     font-family: Montserrat;
     font-size: 0.5em;
@@ -57,62 +67,109 @@
      display: none;
  }
 
-// // header version desktop
-// .Up {
-//     display:grid;
-//     grid-template-columns: 5Opx 2fr 1fr 1fr 1fr 2fr;
-//     grid-template-rows: repeat(4,2fr);
-//     gap: 1rem;
-//     max-height: 600px;
-// }
-// .logo_kazan {
-//     grid-column-start: 0;
-//     grid-column-end: 1;
-//     grid-row-start: 0;
-//     grid-row-end: 1;
+}
+
+@media screen and (min-width: 800px) {
+// header version desktop
+.Up {
+     display:grid;
+     grid-template-columns: 5Opx 2fr 1fr 1fr 1fr 2fr;
+     grid-template-rows: repeat(4,2fr);
+     gap: 1rem;
+     max-height: 600px;
+ }
+ .logo_kazan {
+     max-width: 330px;
+     max-height: 200px;
+     margin: 2%;
+     width: 40%;
+     opacity: 1;
+
+     grid-column-start: 0;
+     grid-column-end: 1;
+     grid-row-start: 0;
+     grid-row-end: 1;
     
-// }
-// .menu_principal-item{
-//     margin: 1em;
-//     color: $color-nav;
-//     font-family: Montserrat;
+ }
+ .menu_principal-list {
+     display: grid;
+     grid-template-rows: 1fr;
+     grid-template-columns: repeat(6,1fr);
+     gap: 1em;
+     list-style-type: none;
+ }
+ .loupe{
+     order: 2;
+ }
+ .menu_principal{
+     
+     margin: 1em;
+     color: $color-nav;
+     font-family: Montserrat;
 
-//     grid-column-start: 5;
-//     grid-column-end: 6;
-//     grid-row-start: 0;
-//     grid-row-end: 1;
-// }
-// .logo_world_skills{
-//     grid-column-start: 3;
-//     grid-column-end: 4;
-//     grid-row-start: 1;
-//     grid-row-end: 2;
-// }
-// .principal_title{
-//     grid-column-start: 4;
-//     grid-column-end: 5;
-//     grid-row-start: 1;
-//     grid-row-end: 2;
-// }
+     grid-column-start: 5;
+     grid-column-end: 6;
+     grid-row-start: 0;
+     grid-row-end: 1;
+ }
+ .logo_world_skills{
+     width: 40%;
+     height: 25%;
+     max-width: 250px;
+     max-height: 170px;
+     margin: 8%;
+
+     grid-column-start: 3;
+     grid-column-end: 4;
+     grid-row-start: 1;
+     grid-row-end: 2;
+ }
+ .principal_title{
+     grid-column-start: 4;
+     grid-column-end: 5;
+     grid-row-start: 1;
+     grid-row-end: 2;
+ }
 
 
-// .Smartphone_off{
-//     font-family: Maven Pro;
-//     color:white;
-//     width: 50%;
-//     max-width: 500px;
-//     margin: auto;
-//     margin-bottom: 1em;
+ .Smartphone_off{
+     font-family: Maven Pro;
+     color:white;
+     width: 50%;
+     max-width: 500px;
+     margin: auto;
+     margin-bottom: 1em;
 
-//     grid-column-start: 3;
-//     grid-column-end: 5;
-//     grid-row-start: 2;
-//     grid-row-end: 3;
-// }
-// .schedule {
-//     display: grid;
-//     grid-column-start: 3;
-//     grid-column-end: 5;
-//     grid-row-start: 3;
-//     grid-row-end: 4;
-// }
+     grid-column-start: 3;
+     grid-column-end: 5;
+     grid-row-start: 2;
+     grid-row-end: 3;
+ }
+ .schedule {
+    background-color: $color-bleudefaut;
+    color: white;
+    max-height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 40Px;
+    padding: 4%;
+    width: 50%;
+    max-width: 400px;
+    min-width: 200px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(40, 50, 59, 0.5); 
+
+     display: grid;
+     grid-column-start: 3;
+     grid-column-end: 5;
+     grid-row-start: 3;
+     grid-row-end: 4;
+ }
+
+ .Smartphone_off{
+    display: flex;
+}
+
+}
