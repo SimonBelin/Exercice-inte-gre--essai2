@@ -139,12 +139,11 @@
      font-weight: bolder;
      display: grid;
      transition-duration: 2s;
-     
-     
  }
  .photo_desktop{
      transition: all 2s;
-     height: ;
+     height: 400px;
+     object-fit: cover;
  }
 //  .photo_desktop:hover{
 //     margin-top: -32em;;
