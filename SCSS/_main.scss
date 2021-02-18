@@ -1,15 +1,13 @@
-/* Version portable: les différents lieu */
-@import "_variable.scss";
 
 // valable pour les deux
 .main_h1 {
     margin-left: 5%;
 }
-.images_activities {
-    object-fit: cover;
-    width: 100%;
-    height: 22em;
-}
+ .images_activities {
+     object-fit: cover;
+     width: 100%;
+     height: 400px;
+ }
 
 .activity-details{
     color: white;
@@ -45,50 +43,91 @@
     grid-column: 1/-1
 }
 
-@media screen and (max-width: 800px) {
+ @media screen and (max-width: 800px) {
 /* Version portable: les différents lieu fermé */
 
 .lieu {
     background-color: #f9f9f9;
-    padding: 4%;
+    padding: 1em;
+    padding-top: 0.5em;
     margin: 1%;
-    height: auto;
+    height: 150px;
+    display: grid;
+    transition-duration: .6s;
     list-style-type: none
+    
 }   
-.lieu :hover{
-    height: 100vw;
-    background-color: $color-titre;
-}
 
-.activity_title_part1{
+.activity_title_part1 {
     color: $color-titre;
     font-family: Montserrat;
     font-weight: bolder;
     display: grid;
+    transition-duration: .6s;
+    order: 1;
 }
-.activity_title_part2{
+.activity_title_part2 {
     color: $color-titre;
     font-family: Museo;
     font-weight: lighter; 
+    transition-duration: .6s;
+    order: 1;
 }
-.activity_situation{
+.activity_situation {
     color: $color-bleudefaut;
     font-family: Montserrat;
+    order: 10;
 }
- .no_select{
+ .no_select {
      display: none;
+     transition-duration: .6s;
+     order: 10;
+     
  }
- .photo_desktop{
+ .images_activities {
      display: none;
+     transition-duration: .6s;
+     order: 5;
  }
-}
+//  .transform {
+//     -webkit-transition: all .6s ease;  
+//     -moz-transition: all .6s ease;  
+//     -o-transition: all .6s ease;  
+//     -ms-transition: all .6s ease;  
+//     transition: all .6s ease;
+//   }
+//.transform-active {
+  .lieu:hover {
+
+    background-color: $color-titre;
+    height: 300px;
+    padding-top: 30em;
+
+    .divide_part1 {
+        margin-top: -420px;
+    }
+    .activity_title_part1, .activity_title_part2 {
+        color:white;
+    }
+    .activity_situation {
+        display: none;
+    }
+    .no_select {
+        display: inline;
+    }
+    .images_activities {
+        display: inline;
+    }
+ }
+ }
+ 
 @media screen and (min-width: 800px) {
 /* Version desktop: */
 .size{
     height: 70%;
 }
  .activities-list{
-     margin: 2rem;
+    margin: 2rem;
    display: grid;
    gap: 1rem;
    grid-template-columns: 1fr 1fr 1fr 1fr;;
@@ -99,51 +138,24 @@
  }
  .lieu {
     padding: 4%;
-    margin: 1%;
-    height: 500px;
+    margin: 0%;
+    height: 520px;
     background-color: #f9f9f9;
     padding: 4%;
     overflow: hidden;
-
-    transition-duration: 2s;
  }
-//  .divide_part1{
-//     background-color: #f9f9f9;
-//     margin: 0em;
-//     overflow: hidden;
 
-//     transition: 2s;
-//  }
-//  .divide_part2{
-//     background-color: $color-titre;
-// }
-// .divide_part1:hover{
-//     margin-top: -500px;
-// }
-// .divide_part2:hover{
-//     margin-top: -250px;
-// }
-
-
-  .lieu:hover{
-     background-color: $color-titre;
-     .activity_title_part1{
-         margin-top: -500px;
-     } 
-  }
-
-
+ 
+ .divide_part1 {
+    transition-duration: 2s;
+}
 .activity_title_part1{
      color: $color-titre;
      font-family: Montserrat;
      font-weight: bolder;
      display: grid;
      transition-duration: 2s;
- }
- .photo_desktop{
-     transition: all 2s;
-     height: 400px;
-     object-fit: cover;
+     color:$color-titre;
  }
 //  .photo_desktop:hover{
 //     margin-top: -32em;;
@@ -153,20 +165,25 @@
     color: $color-titre;
     font-family: Museo;
     font-weight: lighter; 
+    color:$color-titre;
+    transition-duration: 2s;
 }
 .activity_situation{
     color: $color-bleudefaut;
     font-family: Montserrat;
+    transition-duration: 2s;
 }
-// .activity-details{
-//     display: none;
-// }
-// .activity_subtitle{
-//     display: none;
-// }
-// .read-more{
-//     display: none;
-// }
-
+.lieu:hover{
+    background-color: $color-titre;
+    .divide_part1{
+        margin-top: -420px;
+    }
+    .activity_title_part1, .activity_title_part2 {
+        color:white;
+    }
+    .activity_situation {
+        display: none;
+    }
+}
 
 }

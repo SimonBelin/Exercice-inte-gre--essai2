@@ -5,27 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exo integre</title>
     <link rel="stylesheet" href="styles/style.min.css">
+    <link rel="script" href="Script/script.js">
 </head>
 <body>
     <header class="Up">
         <div class="fond"></div>
         <div class="header_title_part1">
+
+
             <img class="logo_kazan" src="/content/images/logo_kazan.png" alt="">
-            <nav class="menu_principal">
-                <ul class="menu_principal-list">
-                    <li class="menu_principal-item loupe"><img src="/content/images/search.svg" alt=""></li>
-                    <li class="menu_principal-item"><a href="">Visits</a></li>
-                    <li class="menu_principal-item"><a href="">Contact</a></li>
-                    <li class="menu_principal-item"><a href="">History</a></li>
-                    <li class="menu_principal-item"><a href="">GetTickets</a></li>
-                </ul>
-            </nav>
+            <div class="box transform">
+                <nav class="menu_principal">
+                    <ul class="menu_principal-list">
+                        <li class="menu_principal-item loupe"><img src="/content/images/search.svg" alt=""></li>
+                        <li class="menu_principal-item"><a href="">Visits</a></li>
+                        <li class="menu_principal-item"><a href="">Contact</a></li>
+                        <li class="menu_principal-item"><a href="">History</a></li>
+                        <li class="menu_principal-item"><a href="">GetTickets</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <input class="burger" type="button" id="button" value="Click Me"></input>
+            
         </div>
         <div class="header_title_part2">
             <img class="logo_world_skills" src="/content/images/logo.png" alt="">
             <h1 class="principal_title">22 > 27 <span class="principal_title_span">Augus</span></h1>
         </div>
         <p class="Smartphone_off">The ultimate competition dedicated for any manuals and technologicals skills, loves and works just for fun, for their work or just exchanging their passion with others…</p>
+        
         <button class="button schedule">SEE SCHEDULE</button>
     </header>
 
@@ -38,17 +46,16 @@
         <ul class="activities-list">
             
             <!-- Lieu1 -->
-
-            <li class="lieu centre">
+            <li class="lieu transform centre">
                 <div class="divide_part1">
-                    
                     <section class="activity_item_part1">
                         <header class="activity-header">
-                            <img class="images_activities photo_desktop" src="/content/images_activities/Kazan_Kremlin.jpg" alt="Plan du Kremlin de Kazan">
+                            <img class="images_activities" src="/content/images_activities/Kazan_Kremlin.jpg" alt="Plan du Kremlin de Kazan">
+                            <h2 class="activity_title_part1">Kremlin <span class="activity_title_part2">de Kazan</span></h2>
                         </header>
                         <p class="activity_situation">Center of the city</p>
                     </section>  
-                    <h2 class="activity_title_part1">Kremlin <span class="activity_title_part2">de Kazan</span></h2>
+                    
                     <div class="activity_more mobile">...</div>
                 </div>
                 <div class="divide_part2">
@@ -68,175 +75,191 @@
             <!-- Lieu2 -->
 
             <li class="lieu centre">
-                <section class="activity_item_part1">
-                    <header class="activity-header">
-                        <img class="images_activities photo_desktop" src="/content/images_activities/d0bad183d0bb_d188d0b0d180d0b8d184_4-tataristan-moque-qulsharif.jpg" alt="Plan du Kremlin de Kazan">
-                        <h2 class="activity_title_part1">Mosquée <span class="activity_title_part2">Qolsharif</span></h2>
-                    </header>
-                    <p class="activity_situation">Center of the city</p>
-                </section>  
-
-                <div class="activity_more mobile">...</div>
-
-                <section class="activity_item_part2">
-                <h2 class="activity_subtitle no_select">La Renaissance ottomane</h2>
-                <p class="activity-details no_select">La mosquée Qolşärif est un édifice religieux du kremlin de la ville de Kazan en Russie. Elle était la plus grande mosquée d'Europe après celle d'Istanbul.
-                </p>
-                <footer class="activity-footer no_select">
-                    <!-- Question ici: pourquoi on ne doit pas chercher une source -->
-                    <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
-                </footer>
-                </section>
+                <div class="divide_part1">
+                    <section class="activity_item_part1">
+                        <header class="activity-header">
+                            <img class="images_activities" src="/content/images_activities/d0bad183d0bb_d188d0b0d180d0b8d184_4-tataristan-moque-qulsharif.jpg" alt="Plan du Kremlin de Kazan">
+                            <h2 class="activity_title_part1">Mosquée <span class="activity_title_part2">Qolsharif</span></h2>
+                        </header>
+                        <p class="activity_situation">Center of the city</p>
+                    </section>  
+                    <div class="activity_more mobile">...</div>
+                </div>
+                <div class="divide_part2">
+                    <section class="activity_item_part2">
+                    <h2 class="activity_subtitle no_select">La Renaissance ottomane</h2>
+                    <p class="activity-details no_select">La mosquée Qolşärif est un édifice religieux du kremlin de la ville de Kazan en Russie. Elle était la plus grande mosquée d'Europe après celle d'Istanbul.
+                    </p>
+                    <footer class="activity-footer no_select">
+                        <!-- Question ici: pourquoi on ne doit pas chercher une source -->
+                        <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
+                    </footer>
+                    </section>
+                </div>
             </li>
 
              <!-- Lieu3 -->
 
              <li class="lieu West">
-                <section class="activity_item_part1">
-                    <header class="activity-header">
-                        <img class="images_activities photo_desktop" src="/content/images_activities/temple_multiple.jpg" alt="Plan du Kremlin de Kazan">
-                        <h2 class="activity_title_part1">Temple <span class="activity_title_part2">of All Religions</span></h2>
-                    </header>
-                    <p class="activity_situation">West of the city</p>
-                </section>  
+                <div class="divide_part1">
+                    <section class="activity_item_part1">
+                        <header class="activity-header">
+                            <img class="images_activities" src="/content/images_activities/temple_multiple.jpg" alt="Plan du Kremlin de Kazan">
+                            <h2 class="activity_title_part1">Temple <span class="activity_title_part2">of All Religions</span></h2>
+                        </header>
+                        <p class="activity_situation">West of the city</p>
+                    </section>  
 
-                <div class="activity_more mobile">...</div>
-
-                <section class="activity_item_part2">
-                <h2 class="activity_subtitle no_select">Temple, mosquée, synagogue,...</h2>
-                <p class="activity-details no_select">Le temple de toutes les religions est un complexe unique comprenant plusieurs types d'architecture religieuse.
-                </p>
-                <footer class="activity-footer no_select">
-                    <!-- Question ici: pourquoi on ne doit pas chercher une source -->
-                    <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
-                </footer>
-                </section>
-            
+                    <div class="activity_more mobile">...</div>
+                </div>
+                <div class="divide_part2">
+                    <section class="activity_item_part2">
+                    <h2 class="activity_subtitle no_select">Temple, mosquée, synagogue,...</h2>
+                    <p class="activity-details no_select">Le temple de toutes les religions est un complexe unique comprenant plusieurs types d'architecture religieuse.
+                    </p>
+                    <footer class="activity-footer no_select">
+                        <!-- Question ici: pourquoi on ne doit pas chercher une source -->
+                        <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
+                    </footer>
+                    </section>
+                </div>
             </li>
 
             <!-- Lieu4 -->
 
             <li class="lieu centre">
-                <section class="activity_item_part1">
-                    <header class="activity-header">
-                        <img class="images_activities photo_desktop" src="/content/images_activities/Baumana_Street_Kazan_Russia_2009_sept_06.jpg" alt="Plan du Kremlin de Kazan">
-                        <h2 class="activity_title_part1">Bauman <span class="activity_title_part2">Street</span></h2>
-                    </header>
-                    <p class="activity_situation">Center of the city</p>
-                </section>  
+                <div class="divide_part1">
+                    <section class="activity_item_part1">
+                        <header class="activity-header">
+                            <img class="images_activities" src="/content/images_activities/Baumana_Street_Kazan_Russia_2009_sept_06.jpg" alt="Plan du Kremlin de Kazan">
+                            <h2 class="activity_title_part1">Bauman <span class="activity_title_part2">Street</span></h2>
+                        </header>
+                        <p class="activity_situation">Center of the city</p>
+                    </section>  
 
-                <div class="activity_more mobile">...</div>
-
-                <section class="activity_item_part2">
-                <h2 class="activity_subtitle no_select">Nikolay Bauman, révolutionnaire</h2>
-                <p class="activity-details no_select">La Rue Baumana est une rue piétonne située au cœur de Kazan. La rue commence au pied du Kremlin et atteint la place Tukay, la place centrale de la ville.
-                </p>
-                <footer class="activity-footer no_select">
-                    <!-- Question ici: pourquoi on ne doit pas chercher une source -->
-                    <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
-                </footer>
-                </section>
-           
+                    <div class="activity_more mobile">...</div>
+                </div>
+                <div class="divide_part2">
+                    <section class="activity_item_part2">
+                        <h2 class="activity_subtitle no_select">Nikolay Bauman, révolutionnaire</h2>
+                        <p class="activity-details no_select">La Rue Baumana est une rue piétonne située au cœur de Kazan. La rue commence au pied du Kremlin et atteint la place Tukay, la place centrale de la ville.
+                        </p>
+                        <footer class="activity-footer no_select">
+                            <!-- Question ici: pourquoi on ne doit pas chercher une source -->
+                            <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
+                        </footer>
+                    </section>
+                </div>
             </li>
 
             <!-- Lieu5 -->
 
             <li class="lieu centre">
-                <section class="activity_item_part1">
-                    <header class="activity-header">
-                        <img class="images_activities photo_desktop" src="/content/images_activities/aqua-photo00.jpg" alt="Plan du Kremlin de Kazan">
-                        <h2 class="activity_title_part1">Riviera<span class="activity_title_part2">Aquapark</span></h2>
-                    </header>
-                    <p class="activity_situation">Center of the city</p>
-                </section>  
+                <div class="divide_part1">
+                    <section class="activity_item_part1">
+                        <header class="activity-header">
+                            <img class="images_activities" src="/content/images_activities/aqua-photo00.jpg" alt="Plan du Kremlin de Kazan">
+                            <h2 class="activity_title_part1">Riviera<span class="activity_title_part2">Aquapark</span></h2>
+                        </header>
+                        <p class="activity_situation">Center of the city</p>
+                    </section>  
 
-                <div class="activity_more mobile">...</div>
-
-                <section class="activity_item_part2">
-                <h2 class="activity_subtitle no_select">Le pouvoir magique et curatif de l'eau</h2>
-                <p class="activity-details no_select">L'un des plus grands au monde. Plus de 50 attractions différentes pour que chacun puisse trouver sa véritable vague d'émotions !
-                </p>
-                <footer class="activity-footer no_select">
-                    <!-- Question ici: pourquoi on ne doit pas chercher une source -->
-                    <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
-                </footer>
-                </section>
-            
+                    <div class="activity_more mobile">...</div>
+                </div>
+                <div class="divide_part2">
+                    <section class="activity_item_part2">
+                    <h2 class="activity_subtitle no_select">Le pouvoir magique et curatif de l'eau</h2>
+                    <p class="activity-details no_select">L'un des plus grands au monde. Plus de 50 attractions différentes pour que chacun puisse trouver sa véritable vague d'émotions !
+                    </p>
+                    <footer class="activity-footer no_select">
+                        <!-- Question ici: pourquoi on ne doit pas chercher une source -->
+                        <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
+                    </footer>
+                    </section>
+                </div>
             </li>
 
             <!-- Lieu6 -->
 
             <li class="lieu south">
-                <section class="activity_item_part1">
-                    <header class="activity-header">
-                        <img class="images_activities photo_desktop" src="/content/images_activities/cat.jpg" alt="Plan du Kremlin de Kazan">
-                        <h2 class="activity_title_part1">Cathédrale<span class="activity_title_part2">de l'Annonciation</span></h2>
-                    </header>
-                    <p class="activity_situation">South of the city</p>
-                </section>  
+                <div class="divide_part1">
+                    <section class="activity_item_part1">
+                        <header class="activity-header">
+                            <img class="images_activities" src="/content/images_activities/cat.jpg" alt="Plan du Kremlin de Kazan">
+                            <h2 class="activity_title_part1">Cathédrale<span class="activity_title_part2">de l'Annonciation</span></h2>
+                        </header>
+                        <p class="activity_situation">South of the city</p>
+                    </section>  
 
-                <div class="activity_more mobile">...</div>
-
-                <section class="activity_item_part2">
-                <h2 class="activity_subtitle no_select">Architecture orthodoxe russe</h2>
-                <p class="activity-details no_select"> Annexée au kremlin, c'est une église orthodoxe d'architecture  russe datant du XIVᵉ siècle et modifiée jusqu'au XIXᵉ siècle.
-                </p>
-                <footer class="activity-footer no_select">
-                    <!-- Question ici: pourquoi on ne doit pas chercher une source -->
-                    <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
-                </footer>
-                </section>
+                    <div class="activity_more mobile">...</div>
+                </div>
+                <div class="divide_part2">
+                    <section class="activity_item_part2">
+                    <h2 class="activity_subtitle no_select">Architecture orthodoxe russe</h2>
+                    <p class="activity-details no_select"> Annexée au kremlin, c'est une église orthodoxe d'architecture  russe datant du XIVᵉ siècle et modifiée jusqu'au XIXᵉ siècle.
+                    </p>
+                    <footer class="activity-footer no_select">
+                        <!-- Question ici: pourquoi on ne doit pas chercher une source -->
+                        <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
+                    </footer>
+                    </section>
+                </div>
        
             </li>
 
             <!-- Lieu7 -->
 
             <li class="lieu north">
-                <section class="activity_item_part1">
-                    <header class="activity-header">
-                        <img class="images_activities photo_desktop" src="/content/images_activities/goluboe_ozero.jpg" alt="Plan du Kremlin de Kazan">
-                        <h2 class="activity_title_part1">Ozero<span class="activity_title_part2">Goluboye</span></h2>
-                    </header>
-                    <p class="activity_situation">North of the city</p>
-                </section>  
+                <div class="divide_part1">
+                    <section class="activity_item_part1">
+                        <header class="activity-header">
+                            <img class="images_activities" src="/content/images_activities/goluboe_ozero.jpg" alt="Plan du Kremlin de Kazan">
+                            <h2 class="activity_title_part1">Ozero<span class="activity_title_part2">Goluboye</span></h2>
+                        </header>
+                        <p class="activity_situation">North of the city</p>
+                    </section>  
 
-                <div class="activity_more mobile">...</div>
+                    <div class="activity_more mobile">...</div>
+                </div>
+                <div class="divide_part2">
+                    <section class="activity_item_part2">
+                    <h2 class="activity_subtitle no_select">Lac kartique de Kazan</h2>
+                    <p class="activity-details no_select"> Textuellement "Lac Bleu", sa profondeur maximale est de 18&nbsp;m. L'eau a rempli une caverne creusée dans du sédiment glaciaire qui s'est effondrée.
 
-                <section class="activity_item_part2">
-                <h2 class="activity_subtitle no_select">Lac kartique de Kazan</h2>
-                <p class="activity-details no_select"> Textuellement "Lac Bleu", sa profondeur maximale est de 18&nbsp;m. L'eau a rempli une caverne creusée dans du sédiment glaciaire qui s'est effondrée.
-
-                </p>
-                <footer class="activity-footer no_select">
-                    <!-- Question ici: pourquoi on ne doit pas chercher une source -->
-                    <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
-                </footer>
-                </section>
-         
+                    </p>
+                    <footer class="activity-footer no_select">
+                        <!-- Question ici: pourquoi on ne doit pas chercher une source -->
+                        <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
+                    </footer>
+                    </section>
+                </div>
             </li>
 
              <!-- Lieu8 -->
 
              <li class="lieu center">
-                <section class="activity_item_part1">
-                    <header class="activity-header">
-                        <img class="images_activities photo_desktop" src="/content/images_activities/musee.jpg" alt="Plan du Kremlin de Kazan">
-                        <h2 class="activity_title_part1">Museum<span class="activity_title_part2">Republic Tatarstan</span></h2>
-                    </header>
-                    <p class="activity_situation">Center of the city</p>
-                </section>  
+                <div class="divide_part1">
+                    <section class="activity_item_part1">
+                        <header class="activity-header">
+                            <img class="images_activities" src="/content/images_activities/musee.jpg" alt="Plan du Kremlin de Kazan">
+                            <h2 class="activity_title_part1">Museum<span class="activity_title_part2">Republic Tatarstan</span></h2>
+                        </header>
+                        <p class="activity_situation">Center of the city</p>
+                    </section>  
 
-                <div class="activity_more mobile">...</div>
-
-                <section class="activity_item_part2">
-                <h2 class="activity_subtitle no_select">L'histoire du Tatarstan</h2>
-                <p class="activity-details no_select">Le musée principal occupe le bâtiment de l'ancien Gostiny Dvor, qui est un monument historique et culturel d'importance fédérale.
-                </p>
-                <footer class="activity-footer no_select">
-                    <!-- Question ici: pourquoi on ne doit pas chercher une source -->
-                    <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
-                </footer>
-                </section>
+                    <div class="activity_more mobile">...</div>
+                </div>
+                <div class="divide_part2">
+                    <section class="activity_item_part2">
+                    <h2 class="activity_subtitle no_select">L'histoire du Tatarstan</h2>
+                    <p class="activity-details no_select">Le musée principal occupe le bâtiment de l'ancien Gostiny Dvor, qui est un monument historique et culturel d'importance fédérale.
+                    </p>
+                    <footer class="activity-footer no_select">
+                        <!-- Question ici: pourquoi on ne doit pas chercher une source -->
+                        <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
+                    </footer>
+                    </section>
+                </div>
    
             </li>
 
@@ -245,99 +268,109 @@
             <!-- Lieu10 -->
 
             <li class="lieu east">
-                <section class="activity_item_part1">
-                    <header class="activity-header">
-                        <img class="images_activities photo_desktop" src="/content/images_activities/lake.jpg" alt="Plan du Kremlin de Kazan">
-                        <h2 class="activity_title_part1">Kaban<span class="activity_title_part2">Lakes</span></h2>
-                    </header>
-                    <p class="activity_situation">East of the city</p>
-                </section>  
+                <div class="divide_part1">
+                    <section class="activity_item_part1">
+                        <header class="activity-header">
+                            <img class="images_activities" src="/content/images_activities/lake.jpg" alt="Plan du Kremlin de Kazan">
+                            <h2 class="activity_title_part1">Kaban<span class="activity_title_part2">Lakes</span></h2>
+                        </header>
+                        <p class="activity_situation">East of the city</p>
+                    </section>  
 
-                <div class="activity_more mobile">...</div>
-
-                <section class="activity_item_part2">
-                <h2 class="activity_subtitle no_select">De l'eau en pleine ville</h2>
-                <p class="activity-details no_select">Les lacs de Kaban sont des lacs qui combiné avec d'autres (Nizhny Kaban, Verkhny Kaban et Sredny Kaban) font 1,86 kilomètres carrés, le plus grand lac du Tatarstan.
-                </p>
-                <footer class="activity-footer no_select">
-                    <!-- Question ici: pourquoi on ne doit pas chercher une source -->
-                    <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
-                </footer>
-                </section>
+                    <div class="activity_more mobile">...</div>
+                </div>
+                <div class="divide_part2">
+                    <section class="activity_item_part2">
+                    <h2 class="activity_subtitle no_select">De l'eau en pleine ville</h2>
+                    <p class="activity-details no_select">Les lacs de Kaban sont des lacs qui combiné avec d'autres (Nizhny Kaban, Verkhny Kaban et Sredny Kaban) font 1,86 kilomètres carrés, le plus grand lac du Tatarstan.
+                    </p>
+                    <footer class="activity-footer no_select">
+                        <!-- Question ici: pourquoi on ne doit pas chercher une source -->
+                        <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
+                    </footer>
+                    </section>
+                </div>
             </li>
 
             <!-- Lieu11 -->
 
             <li class="lieu north">
-                <section class="activity_item_part1">
-                    <header class="activity-header">
-                        <img class="images_activities photo_desktop" src="/content/images_activities/Kazan_Millennium_Bridge_08-2016.jpg" alt="Plan du Kremlin de Kazan">
-                        <h2 class="activity_title_part1">Millennium<span class="activity_title_part2">Bridge</span></h2>
-                    </header>
-                    <p class="activity_situation">North of the city</p>
-                </section>  
+                <div class="divide_part1">
+                    <section class="activity_item_part1">
+                        <header class="activity-header">
+                            <img class="images_activities" src="/content/images_activities/Kazan_Millennium_Bridge_08-2016.jpg" alt="Plan du Kremlin de Kazan">
+                            <h2 class="activity_title_part1">Millennium<span class="activity_title_part2">Bridge</span></h2>
+                        </header>
+                        <p class="activity_situation">North of the city</p>
+                    </section>  
 
-                <div class="activity_more mobile">...</div>
-
-                <section class="activity_item_part2">
-                <h2 class="activity_subtitle no_select">Pont à haubans</h2>
-                <p class="activity-details no_select">Le pont Millennium enjambe la rivière Kazanka. Construit pour le millième anniversaire de Kazan, célébré en 2005, la forme de son pylône est un M.
-                </p>
-                <footer class="activity-footer no_select">
-                    <!-- Question ici: pourquoi on ne doit pas chercher une source -->
-                    <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
-                </footer>
-                </section>
-          
+                    <div class="activity_more mobile">...</div>
+                </div>
+                <div class="divide_part2">
+                    <section class="activity_item_part2">
+                    <h2 class="activity_subtitle no_select">Pont à haubans</h2>
+                    <p class="activity-details no_select">Le pont Millennium enjambe la rivière Kazanka. Construit pour le millième anniversaire de Kazan, célébré en 2005, la forme de son pylône est un M.
+                    </p>
+                    <footer class="activity-footer no_select">
+                        <!-- Question ici: pourquoi on ne doit pas chercher une source -->
+                        <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
+                    </footer>
+                    </section>
+                </div>
             </li>
 
             <!-- Lieu12 -->
 
             <li class="lieu center">
-                <section class="activity_item_part1">
-                    <header class="activity-header">
-                        <img class="images_activities photo_desktop" src="/content/images_activities/hermitage.jpg" alt="Plan du Kremlin de Kazan">
-                        <h2 class="activity_title_part1">Kazan<span class="activity_title_part2">Hermitage</span></h2>
-                    </header>
-                    <p class="activity_situation">Center of the city</p>
-                </section>  
+                <div class="divide_part1">
+                    <section class="activity_item_part1">
+                        <header class="activity-header">
+                            <img class="images_activities" src="/content/images_activities/hermitage.jpg" alt="Plan du Kremlin de Kazan">
+                            <h2 class="activity_title_part1">Kazan<span class="activity_title_part2">Hermitage</span></h2>
+                        </header>
+                        <p class="activity_situation">Center of the city</p>
+                    </section>  
 
-                <div class="activity_more mobile">...</div>
-
-                <section class="activity_item_part2">
-                <h2 class="activity_subtitle no_select">Palais des congrès et centre d'expositions</h2>
-                <p class="activity-details no_select">Musée avec diverses expositions et centre de congrès internationnaux, l'Hermitage est un pôle culturel imposrtant du centre ville.
-                </p>
-                <footer class="activity-footer no_select">
-                    <!-- Question ici: pourquoi on ne doit pas chercher une source -->
-                    <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
-                </footer>
-                </section>
-        
+                    <div class="activity_more mobile">...</div>
+                </div>
+                <div class="divide_part2">
+                    <section class="activity_item_part2">
+                    <h2 class="activity_subtitle no_select">Palais des congrès et centre d'expositions</h2>
+                    <p class="activity-details no_select">Musée avec diverses expositions et centre de congrès internationnaux, l'Hermitage est un pôle culturel imposrtant du centre ville.
+                    </p>
+                    <footer class="activity-footer no_select">
+                        <!-- Question ici: pourquoi on ne doit pas chercher une source -->
+                        <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
+                    </footer>
+                    </section>
+                </div>
             </li>
 
             <!-- Lieu12 -->
 
             <li class="lieu center">
-                <section class="activity_item_part1">
-                    <header class="activity-header">
-                        <img class="images_activities photo_desktop" src="/content/images_activities/pierre-paul.jpg" alt="Plan du Kremlin de Kazan">
-                        <h2 class="activity_title_part1">Eglise<span class="activity_title_part2">St Pierre et Paul</span></h2>
-                    </header>
-                    <p class="activity_situation">Center of the city</p>
-                </section>  
+                <div class="divide_part1">
+                    <section class="activity_item_part1">
+                        <header class="activity-header">
+                            <img class="images_activities" src="/content/images_activities/pierre-paul.jpg" alt="Plan du Kremlin de Kazan">
+                            <h2 class="activity_title_part1">Eglise<span class="activity_title_part2">St Pierre et Paul</span></h2>
+                        </header>
+                        <p class="activity_situation">Center of the city</p>
+                    </section>  
 
-                <div class="activity_more mobile">...</div>
-
-                <section class="activity_item_part2">
-                <h2 class="activity_subtitle no_select">Architecture baroque</h2>
-                <p class="activity-details no_select">L’église Saint-Pierre-et-Paul est une église orthodoxe baroque située dans la vieille ville. Elle est associée à Pierre Le Grand arrivé à Kazan avant sa campagne persienne.
-                </p>
-                <footer class="activity-footer no_select">
-                    <!-- Question ici: pourquoi on ne doit pas chercher une source -->
-                    <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
-                </footer>
-                </section>
+                    <div class="activity_more mobile">...</div>
+                </div>
+                <div class="divide_part2">
+                    <section class="activity_item_part2">
+                    <h2 class="activity_subtitle no_select">Architecture baroque</h2>
+                    <p class="activity-details no_select">L’église Saint-Pierre-et-Paul est une église orthodoxe baroque située dans la vieille ville. Elle est associée à Pierre Le Grand arrivé à Kazan avant sa campagne persienne.
+                    </p>
+                    <footer class="activity-footer no_select">
+                        <!-- Question ici: pourquoi on ne doit pas chercher une source -->
+                        <p><i class="activity-heart"></i> <span class="read-more">Read more</span></p>
+                    </footer>
+                    </section>
+                </div>
             </div> 
             </li>
 

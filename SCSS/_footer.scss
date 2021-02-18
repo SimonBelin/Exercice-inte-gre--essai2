@@ -1,4 +1,4 @@
-@import "_variable.scss";
+
 // Footer valable pour les deux
 .button_footer {
     color: #00d8ff;
@@ -64,9 +64,9 @@
     text-align: center;
     justify-self: end;
 }
-.footer_images_desktop{
-     display: none;
- }
+ .footer_images_desktop{
+      display: none;
+  }
 }
 @media screen and (min-width: 800px) {
  //Footer version desktop
@@ -84,7 +84,6 @@
     align-self: right;
     margin-left: 10%;
  }
- 
 .footer_social_network{
     width: 40%;
     order: 2;
