@@ -8,12 +8,12 @@
     padding: 1rem;
     padding-bottom: 1em;
     margin: auto;
-    margin-bottom: -18px;
+    
 }    
 .footer_social_network{
     width: 90%;
-    max-width: 500 px;
-    min-width: 200px;
+    max-width: 550px;
+    min-width: 300px;
     background-color: white;
     border-radius: 20px;
     display: block;
@@ -46,7 +46,15 @@
 .footer_visit_call{
     font-family: Montserrat;
 }
-
+.icon-twitter:before{
+    content: "\e90d";
+    color: $color-titre;
+}
+.info_inside_button{
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
 // Footer version mobile
 @media screen and (max-width: 800px) {
 
@@ -55,10 +63,7 @@
     color: $color-titre;
     line-height: 1rem;
 }
-.info_inside_button{
-    width: 100%;
-    margin: auto;
-}
+
 .footer_part3{
     margin: 10%;
     display: flex;
@@ -88,6 +93,7 @@
     margin-left: 10%;
  }
 .footer_social_network{
+    
     width: 40%;
     order: 2;
     position: absolute;

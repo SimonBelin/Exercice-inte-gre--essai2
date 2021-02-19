@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exo integre</title>
     <link rel="stylesheet" href="styles/style.min.css">
+    <link rel="stylesheet" href="/content/fonts/font-icon/codeconf.css">
     <script type="javascript" src="Script/script.js"></script>
     <script>scr="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"</script>
 </head>
@@ -17,11 +18,18 @@
             <div class="box transform">
                 <nav class="menu_principal">
                     <ul class="menu_principal-list">
-                        <li class="menu_principal-item loupe"><img src="/content/images/search.svg" alt=""></li>
-                        <li class="menu_principal-item"><a href="">Visits</a></li>
-                        <li class="menu_principal-item"><a href="">Contact</a></li>
-                        <li class="menu_principal-item"><a href="">History</a></li>
-                        <li class="menu_principal-item"><a href="">GetTickets</a></li>
+                        <li class="menu_principal-item loupe">
+                        <div class="glyph">
+                            <div class="glyph_icon">
+                                <span class="icon-search"></span>
+                                <span class="txt_icon"></span>
+                                <span class="ct_value"></span>
+                            </div>
+                        </div>
+                        <li class="menu_principal-item"><a class="coul_nav" href="">Visits</a></li>
+                        <li class="menu_principal-item"><a class="coul_nav" href="/forms/formulaire.html">Contact</a></li>
+                        <li class="menu_principal-item"><a class="coul_nav" href="">History</a></li>
+                        <li class="menu_principal-item"><a class="coul_nav" href="">GetTickets</a></li>
                     </ul>
                 </nav>
             </div>
@@ -378,9 +386,23 @@
         <!-- Get Ticket -->
         <button class="get_ticket">
             <a href="" class="ticket_main">get Ticket</a>
-                <p href="" class="paiement_main">"Carte de crédit"</p>
-                <p href="" class="paiement_main">"Paypal"</p>
-                <p href="" class="paiement_main">"P2600" <span>"RUR"</span></p>
+                <div class="glyph">
+                    <div class="glyph_icon">
+                        <span class="icon-cb"></span>
+                        <span class="txt_icon"></span>
+                        <span class="ct_value"></span>
+                    </div>
+                </div>
+                
+                <div class="glyph">
+                    <div class="glyph_icon">
+                        <span class="icon-paypal"></span>
+                        <span class="txt_icon"></span>
+                        <span class="ct_value"></span>
+                    </div>
+                </div>
+
+                <p href="" class="paiement_main">P2600 <span>RUR</span></p>
         </button>
     
     </main>
@@ -405,9 +427,22 @@
             <button class="footer_social_network">
                 <p class="button_footer">Follow Us</p>
                 <div class="info_inside_button">
-                    <img class="slack_twitter" src="/content/images/slack.svg" alt="">
+                    <div class="glyph">
+                        <div class="glyph_icon">
+                            <span class="icon-slack"></span>
+                            <span class="txt_icon"></span>
+                            <span class="ct_value"></span>
+                        </div>
+
+                    </div>
                     <a class="lien_slack_twitter" href="slack">#kazan2019</a>
-                    <img class="slack_twitter" src="/content/images/twitter.svg" alt="">
+                    <div class="glyph">
+                        <div class="glyph_icon">
+                            <span class="icon-twitter"></span>
+                            <span class="txt_icon"></span>
+                            <span class="ct_value"></span>
+                        </div>
+                    </div>
                     <a class="lien_slack_twitter" href="slack">@kazan2019</a>
                 </div>
             </button>
