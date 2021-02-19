@@ -6,3 +6,26 @@
  @import "_header.scss";
  @import "_main.scss";
  @import "_footer.scss";
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../content/fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
+   }
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../content/fonts/museo/Museo500-Regular.otf") format("otf"),
+    url("../content/fonts/museo/Museo300-Regular.otf") format("otf"),
+    url("../content/fonts/museo/Museo700-Regular.otf");
+   }
+
+@font-face {
+    font-family: "Maven-Pro";
+    src: url("../content/fonts/maven-pro/MavenPro-medium.ttf") format("ttf"),
+    url("../content/fonts/maven-pro/MavenPro-regular.ttf") format("ttf");
+   }
+
+   @font-face {
+    font-family: "font-icon";
+    src: url("../content/fonts/font-icon/webfonts/codeconf.woff") format("wof");
+   }

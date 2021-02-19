@@ -76,9 +76,10 @@
   }
   .box {
     background-color: $color-bleudefaut;
-    height: 100vw;
+    height: 100vh;
     width: 100vw;
     margin-left:-800px;
+    
   }
   .transform {
     -webkit-transition: all 1s ease;  
@@ -96,7 +97,62 @@
     display:flex;
     margin-left:700px;
     z-index:3;
-  }
+
+    width: 54px;
+    height: 54px;
+
+    border-radius: 50%;
+
+    background-color: rgba($color: #284e68, $alpha: 0);
+
+    span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 22px;
+        height: 4px;
+
+        background-color: white;
+        transform: translateX(-50%) translateY(-50%);
+        transition: transform .5s;
+
+        &::before, &::after{
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: block;
+            width: 22px;
+            height: 4px;
+
+            transform: translateY(-6px);
+            background-color: white;
+        }
+        &::after{
+            transform: translateY(6px);
+        }
+     }
+    &:hover {
+        span::before{
+            transform: translateY(-8px);
+        }
+        span::after {
+            transform: translateY(8px);
+         }
+    }
+        &.is-opened{
+            span{
+                opacity: 0;
+            }
+
+        }
+    
+    }
+
+
+
 
 }
 
