@@ -50,6 +50,7 @@
 // Footer version mobile
 @media screen and (max-width: 800px) {
 
+
 .lien_slack_twitter{
     color: $color-titre;
     line-height: 1rem;
@@ -70,7 +71,9 @@
 }
 @media screen and (min-width: 800px) {
  //Footer version desktop
-
+ .footer{
+    min-height: 470px;
+}
  .secteur_flex1{
      display: flex;
      width: 100%;
@@ -98,7 +101,7 @@
  }
  .footer_part3{
     position: absolute;
-    margin-left: 70%;
+    margin-left: 67%;
     margin-top: 3%;
  }
 //  .footer{

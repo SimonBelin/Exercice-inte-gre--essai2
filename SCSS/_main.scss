@@ -91,6 +91,10 @@
      display: none;
      transition-duration: .6s;
      order: 5;
+      border-right: solid 15px $color-titre;
+      border-left: solid 16px $color-titre;
+      border-top: solid 18px $color-titre;
+      margin-left: -15px;
  }
 //  .transform {
 //     -webkit-transition: all .6s ease;  
@@ -104,7 +108,7 @@
 
     background-color: $color-titre;
     height: 300px;
-    padding-top: 30em;
+    padding-top: 27em;
 
     .divide_part1 {
         margin-top: -420px;

@@ -1,6 +1,20 @@
-$("#button").click(function() {
-    $('.transform').toggleClass('transform-active');
-  });
+
+// $('.burger').click(function() {
+//     console.log();
+//     $('.transform').toggleClass('transform-active');
+  
+//   });
+// const toggle = document.querySelector(".burger");
+
+// toggle.addEventListener("click", (ev) => {
+//   toggle.classList.toggle("active");
+// });
+
+
+$(".button").click(function() {
+  $('.transform').toggleClass('transform-active');
+});
+
 
 $(document).ready(function(){
   $('.burger').click(function(e){
@@ -10,11 +24,6 @@ $(document).ready(function(){
       $this.addClass('is-closed').removeClass('is-opened');
     }else{
       $this.removeClass('is-closed').addClass('is-opened');
-    }
+   }
   })
-});
-
-
-//  $("li").click(function() {
-//     $('.transform').toggleClass('transform-active');
-//   });
+})

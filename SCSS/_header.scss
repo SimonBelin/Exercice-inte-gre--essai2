@@ -68,18 +68,18 @@
  //essais menu déroulent
  .menu_principal-list{
     font-family:montserrat;
-    color:$color-menu;
+    color:$color-nav;
     padding-top:80%;
     list-style-type: none;
     text-align:right;
     margin-right: 5%;
   }
-  .box {
+  .box{
+    position: absolute;
     background-color: $color-bleudefaut;
     height: 100vh;
     width: 100vw;
-    margin-left:-800px;
-    
+    margin-left:-105vw;
   }
   .transform {
     -webkit-transition: all 1s ease;  
@@ -91,12 +91,13 @@
   .transform-active {
     height: 100vw;
     width: 100vw;
-    margin-left:0px;
+    margin-left:0vw;
   }
-  .burger{
+.burger {
     display:flex;
-    margin-left:700px;
+    margin-left:40%;
     z-index:3;
+    border: solid 3px $color-titre;
 
     width: 54px;
     height: 54px;
@@ -104,16 +105,18 @@
     border-radius: 50%;
 
     background-color: rgba($color: #284e68, $alpha: 0);
-
+    transition: transform .5s;
+//animation du burger
     span{
-        position: absolute;
+        position: relative;
         top: 50%;
         left: 50%;
         display: block;
         width: 22px;
-        height: 4px;
+        height: 3px;
 
-        background-color: white;
+        background-color: $color-titre;
+
         transform: translateX(-50%) translateY(-50%);
         transition: transform .5s;
 
@@ -125,34 +128,39 @@
 
             display: block;
             width: 22px;
-            height: 4px;
+            height: 3px;
 
-            transform: translateY(-6px);
-            background-color: white;
+            transform: translateY(-8px);
+            background-color: $color-titre;
+    
+            transform-origin: 50% 50%;
         }
         &::after{
-            transform: translateY(6px);
+            transform: translateY(8px);
         }
      }
     &:hover {
         span::before{
-            transform: translateY(-8px);
+            transform: translateY(-10px);
         }
         span::after {
-            transform: translateY(8px);
+            transform: translateY(10px);
          }
     }
-        &.is-opened{
-            span{
-                opacity: 0;
-            }
-
+    &.is-opened{
+         transform: rotate(180deg);
+         span{
+            background: transparent;;
         }
-    
+        span::before{
+            transform: translateY(0px) rotate(45deg);
+        }
+        span::after {
+            transform: translateY(0px) rotate(-45deg);
+            }
     }
-
-
-
+    
+}
 
 }
 
@@ -184,6 +192,7 @@
      display: flex;
      align-items: center;
      text-align: right;
+     margin-left: 20%;
 
  }
  .menu_principal-item{
